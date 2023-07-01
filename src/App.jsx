@@ -8,15 +8,15 @@ const App = () => {
   const handleColorChange = () => {
     const color = `rgb(${red}, ${green}, ${blue})`;
     document.getElementById("color-output").style.backgroundColor = color;
-    document.querySelector("h2").style.color = color;
     document.getElementById("output").innerHTML = color;
   };
 
   return (
     <div className="section">
-      <div id="color-output"></div>
+     
       <div className="container glass">
-        <h2 style={{ color: `rgb(${red}, ${green}, ${blue})` }}>Simple RGB Color Generator</h2>
+      <div id="color-output"></div>
+        <h2 style={{ background: `rgb(${red}, ${green}, ${blue})` }}>Simple RGB Color Generator</h2>
         <div className="input-container glass">
           <div className="wrapper">
             R
